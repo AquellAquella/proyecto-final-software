@@ -29,31 +29,36 @@ const crearChatLi = (message, className) => {
     return chatLi;
 }
 
-const generararRespuesta = (chatElemento) => {
-    const mensajeElemento = chatElemento.querySelector("p");
+const generararRespuesta = async (mensajeElemento) => {
+  try {
+      const response = await fetch('/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ userInput: mensajeElemento }),
+      });
 
-    try {
-        const response = fetch('/chat', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ inputChatBtn: mensajeElemento }),
-        });
+      const data = await response.json();
+      console.log(data)
+      const botMessage = data.response;
+      console.log(botMessage)
 
-        const data = response.json();
-        console.log(data)
-        const botMessage = data.response;
-        console.log(botMessage)
-        // Add chat message to the chat history
-        
-
-        // Scroll to the bottom of the chat history
-        chatHistory.scrollTop = chatHistory.scrollHeight;
-      } catch (error) {
-        console.error('Error:', error);
-        // Handle errors gracefully, e.g., display an error message to the user
+      // Eliminar el mensaje "Escribiendo..."
+      const escribiendoMessage = document.querySelector(".incoming:last-child");
+      if (escribiendoMessage) {
+        chatbox.removeChild(escribiendoMessage);
       }
+
+      // Añadir el mensaje del bot al historial del chat
+      chatbox.appendChild(crearChatLi(botMessage, "incoming"));
+
+      // Desplazar al fondo del historial del chat
+      chatbox.scrollTo(0, chatbox.scrollHeight);
+    } catch (error) {
+      console.error('Error:', error);
+      // Manejar errores de manera adecuada, por ejemplo, mostrar un mensaje de error al usuario
+    }
 }
 
 const manejoChat = () => {
@@ -80,9 +85,10 @@ const manejoChat = () => {
     setTimeout (() => {
         chatbox.appendChild(crearChatLi("Escribiendo...", "incoming"));
         chatbox.scrollTo(0, chatbox.scrollHeight);
-        // generararRespuesta();
+        generararRespuesta(mensajeUsuario);
     }, 600);
 }
+
 
 //Ajustando el cuadro de texto del usuario dependiendo de los elementos que este ingrese
 inputChatBtn.addEventListener("input", () => {
