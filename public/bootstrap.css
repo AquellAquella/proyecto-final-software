@@ -5,7 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-/* Importación de fuenta de tipo de letra deseado desde la API de Google Fonts */
+/* Importación de fuenta de tipo de letra deseado desde la API de Google Fonts 
+   Se movio a la parte superior de la hoja de estilo porque tenía problemas para registrar su aplicación de importación mediante URL */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
   margin: 0;
@@ -6149,7 +6150,7 @@ button.close {
 .chatbot {
   position: fixed;
   right: 35px;
-  bottom: 60px;
+  bottom: 70px;
   width: 420px;
   transform: scale(0.5);
   opacity: 0;

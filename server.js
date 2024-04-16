@@ -1,16 +1,20 @@
+// Elementos a descargar dentro del proyecto para que este funcione, utilizando la consola desde el root del proyecto
 // node --version # Should be >= 18
 // npm install @google/generative-ai express
 
+// constante de obtención de elementos desde la carpeta y funcionalidad express de node_modules junto con obtención de variables delimitadas dentro del archivo de .env del uso del modelo de Node.js y los módulos descargados para generar ai desde un modelo
 const express = require('express');
 const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } = require('@google/generative-ai');
 const dotenv = require('dotenv').config()
 
+// Se da de alta el modelo de Gemini AI de Google Studio AI, abriendo el puerto 3000 para poder consultar la aplicación desde el localhost y se envía el API Key localizado en el archivo .env
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.json());
 const MODEL_NAME = "gemini-pro";
 const API_KEY = process.env.API_KEY;
 
+// se obtienen los elementos del modelo y su API Key de las constantes dadas de alta en la parte superior junto con la configuración general del modelo
 async function runChat(userInput) {
   const genAI = new GoogleGenerativeAI(API_KEY);
   const model = genAI.getGenerativeModel({ model: MODEL_NAME });
@@ -22,14 +26,15 @@ async function runChat(userInput) {
     maxOutputTokens: 1000,
   };
 
+// se configuran los elementos de seguridad de las restricciones del modelo, donde se dejan todas las categorías a que casi no bloquee nada en caso de que se presenten inputs peligrosos como AS o descripciones gráficas violentas
   const safetySettings = [
     {
       category: HarmCategory.HARM_CATEGORY_HARASSMENT,
-      threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+      threshold: HarmBlockThreshold.BLOCK_ONLY_HIGH,
     },
     {
       category: HarmCategory.HARM_CATEGORY_HATE_SPEECH,
-      threshold: HarmBlockThreshold.BLOCK_MEDIUM_AND_ABOVE,
+      threshold: HarmBlockThreshold.BLOCK_ONLY_HIGH,
     },
     {
       category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT,
@@ -41,6 +46,7 @@ async function runChat(userInput) {
     },
   ];
 
+  //Comienzo de los prompts del chat respectivo junto con el modelo precargado deinido desde un inicio.
   const chat = model.startChat({
     generationConfig,
     safetySettings,
@@ -61,29 +67,31 @@ async function runChat(userInput) {
   return response.text();
 }
 
+// Alta de los elementos de path para obtener las ubicaciones del proyecto reestructurado de nueva manera de un inicio, para obtener el árbol de estructura del proyecto
 const path = require('path');
 
+// Se establece el directorio como estático en base a los contenidos de la carpeta pública, donde se encuentra el elemento de CSS y JavaScript para operar el chatbot
 app.use(express.static(path.join(__dirname,'public')));
 
+// Se establece como dirección automática el archivo determinado como index.html
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
-app.get('/loader.gif', (req, res) => {
-  res.sendFile(__dirname + '/loader.gif');
-});
+
+//Se hace una petición asyncrona bajo el nombre del chatbot para la recepción y envío de los mensajes del usuario hacia el chatbot en el otro endpoint. Quedará como bitácora dentro del log de la consola de comandos en el equipo en el que se ejecute la aplicación.
 app.post('/chat', async (req, res) => {
   try {
     const userInput = req.body?.userInput;
-    console.log('incoming /chat req', userInput)
+    console.log('incoming /chat usuario', userInput)
     if (!userInput) {
-      return res.status(400).json({ error: 'Invalid request body' });
+      return res.status(400).json({ error: 'Cuerpo del mensaje invalido' });
     }
 
     const response = await runChat(userInput);
     res.json({ response });
   } catch (error) {
-    console.error('Error in chat endpoint:', error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    console.error('Error en el endpoint del chat:', error);
+    res.status(500).json({ error: 'Error interno del servidor' });
   }
 });
 
