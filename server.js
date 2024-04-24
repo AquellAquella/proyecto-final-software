@@ -82,7 +82,11 @@ app.get('/', (req, res) => {
 app.post('/chat', async (req, res) => {
   try {
     const userInput = req.body?.userInput;
-    console.log('incoming /chat usuario', userInput)
+
+    //concatenando fecha y hora local del equipo
+    const now = new Date();
+    const fechaHora = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+    console.log('\n\nincoming /chat usuario: ', userInput, '\nFecha y hora:', fechaHora)
     if (!userInput) {
       return res.status(400).json({ error: 'Cuerpo del mensaje invalido' });
     }

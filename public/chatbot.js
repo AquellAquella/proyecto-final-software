@@ -29,6 +29,7 @@ const crearChatLi = (message, className) => {
     return chatLi;
 }
 
+//obtención de la respuesta generada por modelo de Gemini AI
 const generararRespuesta = async (mensajeElemento) => {
   try {
       const response = await fetch('/chat', {
@@ -61,6 +62,18 @@ const generararRespuesta = async (mensajeElemento) => {
     }
 }
 
+// variable para almacenar el temporizador
+let timer;
+
+const resetTimer = () => {
+    // reinicia el temporizador cuando se recibe un mensaje del usuario
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+        // acción a realizar después de 5 minutos (300,000 milisegundos)
+        generararRespuesta("El usuario está inactivo.");
+    }, 300000); // 5 minutos en milisegundos
+}
+
 const manejoChat = () => {
     // remover espacios en blanco innecesarios
     mensajeUsuario = inputChatBtn.value.trim();
@@ -81,12 +94,17 @@ const manejoChat = () => {
     //autoscroll en los mensajes cuando no caben en pantalla
     chatbox.scrollTo(0, chatbox.scrollHeight);
 
+    // reinicia el temporizador cada vez que se recibe un mensaje del usuario
+    resetTimer();
+
     //Desarrollo de despliegue de mensaje de espera a respuesta del chatbot después de que el usuario da submit en el trabajo
     setTimeout (() => {
         chatbox.appendChild(crearChatLi("Escribiendo...", "incoming"));
         chatbox.scrollTo(0, chatbox.scrollHeight);
         generararRespuesta(mensajeUsuario);
     }, 600);
+
+
 }
 
 
@@ -107,6 +125,14 @@ inputChatBtn.addEventListener("keydown", (e) => {
 });
 
 enviarChatBtn.addEventListener("click", manejoChat);
+
+// evento para reiniciar el temporizador cuando el usuario escribe en el cuadro de entrada de chat
+inputChatBtn.addEventListener("input", () => {
+  inputChatBtn.style.height = `${inputInicioAltura}px`;
+  inputChatBtn.style.height = `${inputChatBtn.scrollHeight}px`;
+  resetTimer(); // reinicia el temporizador cada vez que el usuario escribe algo
+});
+
 //control del toggler de visibilidad del chatbot
 chatbotCerrarBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
