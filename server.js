@@ -53,11 +53,11 @@ async function runChat(userInput) {
     history: [
       {
         role: "user",
-        parts: [{ text: "Tu eres Sam, un asistente amigable que trabaja para una página web orientada a servicios de emergencia de índole médico, llamada Proyecto de Chatbot de Servicios de Emergencia en Saturaciones Telefónicas (CSEST). CSEST es una página web orientada a ayudar y evitar tiempos de espera y conflictos de tomas de registro de emergencias a nivel salud o peligro del usuario.Tu trabajo es obtener el nombre del usuario, número de celular y locación, no empezarás la interacción hasta que te hayan dado el nombre del usuario, número de celular y locación, al mismo tiempo verificarás que el número de celular sea correcto y agradecerás al usuario; y regresarás como output el nombre, número telefónico y locación en este formato: {(nombre: nombre del usuario)} {(número de celular: número de celular del usuario)} {(locación: locación del usuario)}Una vez que hayas recopilado los datos del nombre del usuario, número de celular y locación del usuario, empezarás a contestar las respuestas relacionadas con su emergencia médica, darás consejos médicos que no requieran de ayuda profesional crítica. Una vez recuperada la información del usuario, preguntarás por el tipo de emergencia del usuario."}],
+        parts: [{ text: "Tu eres Sam, un asistente amigable que trabaja para una página web orientada a servicios de emergencia de índole médico, llamada Proyecto de Chatbot de Servicios de Emergencia en Saturaciones Telefónicas (CSEST). CSEST es una página web orientada a ayudar y evitar tiempos de espera y conflictos de tomas de registro de emergencias a nivel salud o peligro del usuario. Recibirás las coordenadas del usuario en cuanto abra el chat. Tu trabajo es obtener el nombre del usuario y número de celular, no empezarás la interacción hasta que te hayan dado el nombre del usuario y número de celular, al mismo tiempo verificarás que el número de celular sea correcto y agradecerás al usuario; y regresarás como output el nombre, número telefónico y locación en este formato: {(nombre: nombre del usuario)} {(número de celular: número de celular del usuario)}. Una vez que hayas recopilado los datos del nombre del usuario, número de celular y locación del usuario, empezarás a contestar las respuestas relacionadas con su emergencia médica, darás consejos médicos que no requieran de ayuda profesional crítica. Una vez recuperada la información del usuario, preguntarás por el tipo de emergencia del usuario."}],
       },
       {
         role: "model",
-        parts: [{ text: "¡Hola! Soy Sam, asistente del Proyecto de Chatbot de Servicios de Emergencia en Saturaciones Telefónicas (CSEST). ¿Puedo obtener su nombre, número de teléfono y ubicación para verificar que la información sea correcta? Una vez que tenga esa información, estaré encantado de ayudarlo con su emergencia."}],
+        parts: [{ text: "¡Hola! Soy Sam, asistente del Proyecto de Chatbot de Servicios de Emergencia en Saturaciones Telefónicas (CSEST). ¿Puedo obtener su nombre y número de teléfono para verificar que la información sea correcta? Una vez que tenga esa información, estaré encantado de ayudarlo con su emergencia."}],
       },
     ],
   });
@@ -83,9 +83,13 @@ app.post('/chat', async (req, res) => {
   try {
     const userInput = req.body?.userInput;
 
-    //concatenando fecha y hora local del equipo
+    // Obtener la fecha y hora actual
     const now = new Date();
     const fechaHora = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+
+    // Registrar el mensaje del usuario en el log
+    writeToLog(`incoming /chat usuario: ${userInput}, Fecha y hora: ${fechaHora}`);
+
     console.log('\n\nincoming /chat usuario: ', userInput, '\nFecha y hora:', fechaHora)
     if (!userInput) {
       return res.status(400).json({ error: 'Cuerpo del mensaje invalido' });
@@ -98,6 +102,61 @@ app.post('/chat', async (req, res) => {
     res.status(500).json({ error: 'Error interno del servidor' });
   }
 });
+
+
+const fs = require('fs');
+// const path = require('path');
+
+// Función para escribir en el archivo de registro
+function writeToLog(data) {
+  const logFilePath = path.join(__dirname, 'log.txt');
+  fs.appendFile(logFilePath, `${data}\n`, (err) => {
+    if (err) {
+      console.error('Error al escribir en el archivo de registro:', err);
+    } else {
+      console.log('\nDatos registrados en el archivo de log.');
+    }
+  });
+}
+
+// Obtener la fecha y hora actual
+const now = new Date();
+const fechaHoraInicio = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+
+// Datos a registrar
+const datosInicioEjecucion = `\n\nInicio de la ejecución: ${fechaHoraInicio}`;
+
+// Registrar los datos de inicio de ejecución
+writeToLog(datosInicioEjecucion);
+
+// Mensaje de confirmación en la consola
+console.log('\nInicio de la ejecución registrada en el archivo de log.');
+
+// Concatenando fecha y hora local del equipo
+const fechaHora = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+writeToLog(`Fecha y hora: ${fechaHora}`);
+
+// Manejar la señal SIGINT (Ctrl + C)
+process.on('SIGINT', () => {
+  console.log('\nDeteniendo el servidor...');
+  
+  // Obtener la fecha y hora actual
+  const now = new Date();
+  const fechaHoraFin = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
+
+  // Mensaje de fin de ejecución
+  const mensajeFinEjecucion = `\n--- Fin de registro de datos ---\nFecha y hora de finalización: ${fechaHoraFin}`;
+  
+  // Registrar el mensaje de fin de ejecución
+  writeToLog(mensajeFinEjecucion);
+  
+  // Salir del proceso
+  process.exit(0);
+});
+
+// Mensaje de confirmación en la consola
+console.log('\nInicio de la ejecución registrada en el archivo de log.');
+
 
 app.listen(port, () => {
   console.log(`Server escuchando en el puerto ${port}`);

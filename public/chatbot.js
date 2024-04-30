@@ -1,3 +1,31 @@
+// obtener ubicación
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    console.error("Geolocalización no se soporta en el buscador");
+  }
+}
+
+function showPosition(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  const locationMessage = `Ubicación detectada: Latitud ${latitude}, Longitud ${longitude}`;
+
+  // Mostrar la ubicación en el chat
+  chatbox.appendChild(crearChatLi(locationMessage, "outgoing"));
+  chatbox.scrollTo(0, chatbox.scrollHeight);
+
+  // Enviar la ubicación al servidor junto con el mensaje del usuario
+  const userMessageWithLocation = `${mensajeUsuario} - Ubicación: ${latitude},${longitude}`;
+  generararRespuesta(userMessageWithLocation);
+}
+
+// Agregar un botón para que el usuario pueda compartir su ubicación
+// const locationBtn = document.querySelector(".chat-input .location-btn");
+// locationBtn.addEventListener("click", getLocation);
+
+
 // variables para recibir texto del usuario y botón de enviar
 const inputChatBtn = document.querySelector(".chat-input textarea");
 const enviarChatBtn = document.querySelector(".chat-input span");
