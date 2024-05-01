@@ -118,3 +118,270 @@ Fecha y hora: 29/4/2024 21:53:38
 
 Inicio de la ejecución: 29/4/2024 21:57:04
 Fecha y hora: 29/4/2024 21:57:04
+
+
+Inicio de la ejecución: 29/4/2024 22:18:51
+Fecha y hora: 29/4/2024 22:18:51
+
+
+Inicio de la ejecución: 30/4/2024 19:47:45
+Fecha y hora: 30/4/2024 19:47:45
+incoming /chat usuario: undefined - Ubicación: 19.2534455,-99.6267027, Fecha y hora: 30/4/2024 19:48:09
+incoming /chat usuario: Me caí de la escalera y me torcí el tobillo, esta hinchado. ¿Qué hago?, Fecha y hora: 30/4/2024 19:48:39
+incoming /chat usuario: Si gracias, es todo lo que necesitaba, Fecha y hora: 30/4/2024 19:49:09
+incoming /chat usuario: Si gracias, es todo lo que necesitaba - Ubicación: 19.2534455,-99.6267027, Fecha y hora: 30/4/2024 19:49:29
+
+
+Inicio de la ejecución: 30/4/2024 19:51:10
+Fecha y hora: 30/4/2024 19:51:10
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 19:51:20
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 19:53:41
+
+
+Inicio de la ejecución: 30/4/2024 19:55:15
+Fecha y hora: 30/4/2024 19:55:15
+
+
+Inicio de la ejecución: 30/4/2024 19:56:49
+Fecha y hora: 30/4/2024 19:56:49
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 19:56:50
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 19:57:16
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 19:57:17
+
+
+Inicio de la ejecución: 30/4/2024 19:59:20
+Fecha y hora: 30/4/2024 19:59:20
+incoming /chat usuario: Si gracias, es todo lo que necesitaba - Ubicación: 19.2550373,-99.623011, Fecha y hora: 30/4/2024 19:59:27
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 19:59:51
+
+
+Inicio de la ejecución: 30/4/2024 20:01:49
+Fecha y hora: 30/4/2024 20:01:49
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:01:50
+Fecha y hora: 30/4/2024 20:07:19
+
+
+Inicio de la ejecución: 30/4/2024 20:07:19
+
+
+Inicio de la ejecución: 30/4/2024 20:07:54
+Fecha y hora: 30/4/2024 20:07:54
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:08:08
+
+
+Inicio de la ejecución: 30/4/2024 20:09:16
+Fecha y hora: 30/4/2024 20:09:16
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:09:25
+
+
+Inicio de la ejecución: 30/4/2024 20:09:54
+Fecha y hora: 30/4/2024 20:09:54
+
+
+Inicio de la ejecución: 30/4/2024 20:12:43
+Fecha y hora: 30/4/2024 20:12:43
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:12:54
+
+
+Inicio de la ejecución: 30/4/2024 20:15:43
+Fecha y hora: 30/4/2024 20:15:43
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:15:49
+
+
+Inicio de la ejecución: 30/4/2024 20:17:54
+Fecha y hora: 30/4/2024 20:17:54
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:17:59
+
+
+Inicio de la ejecución: 30/4/2024 20:20:59
+Fecha y hora: 30/4/2024 20:20:59
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:21:06
+
+
+Inicio de la ejecución: 30/4/2024 20:21:44
+Fecha y hora: 30/4/2024 20:21:44
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:21:45
+
+
+Inicio de la ejecución: 30/4/2024 20:22:59
+Fecha y hora: 30/4/2024 20:22:59
+
+
+Inicio de la ejecución: 30/4/2024 20:23:52
+Fecha y hora: 30/4/2024 20:23:52
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:23:54
+
+
+Inicio de la ejecución: 30/4/2024 20:25:16
+Fecha y hora: 30/4/2024 20:25:16
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:25:18
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:25:33
+
+
+Inicio de la ejecución: 30/4/2024 20:27:01
+Fecha y hora: 30/4/2024 20:27:01
+
+
+Inicio de la ejecución: 30/4/2024 20:28:13
+Fecha y hora: 30/4/2024 20:28:13
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:28:15
+
+
+Inicio de la ejecución: 30/4/2024 20:29:15
+Fecha y hora: 30/4/2024 20:29:15
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 20:29:23
+
+
+Inicio de la ejecución: 30/4/2024 20:30:22
+Fecha y hora: 30/4/2024 20:30:22
+
+
+Inicio de la ejecución: 30/4/2024 21:03:42
+Fecha y hora: 30/4/2024 21:03:42
+
+
+Inicio de la ejecución: 30/4/2024 21:04:29
+Fecha y hora: 30/4/2024 21:04:29
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 21:04:30
+
+
+Inicio de la ejecución: 30/4/2024 21:05:22
+Fecha y hora: 30/4/2024 21:05:22
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 21:05:24
+
+
+Inicio de la ejecución: 30/4/2024 21:05:50
+Fecha y hora: 30/4/2024 21:05:50
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 21:05:52
+
+
+Inicio de la ejecución: 30/4/2024 21:06:22
+Fecha y hora: 30/4/2024 21:06:22
+
+
+Inicio de la ejecución: 30/4/2024 21:07:10
+Fecha y hora: 30/4/2024 21:07:10
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 21:07:11
+
+
+Inicio de la ejecución: 30/4/2024 21:09:23
+Fecha y hora: 30/4/2024 21:09:23
+
+
+Inicio de la ejecución: 30/4/2024 21:10:01
+Fecha y hora: 30/4/2024 21:10:01
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 21:10:05
+
+
+Inicio de la ejecución: 30/4/2024 21:11:35
+Fecha y hora: 30/4/2024 21:11:35
+
+
+Inicio de la ejecución: 30/4/2024 21:13:58
+Fecha y hora: 30/4/2024 21:13:58
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 21:14:01
+Fecha y hora: 30/4/2024 21:15:52
+
+
+Inicio de la ejecución: 30/4/2024 21:15:52
+
+
+Inicio de la ejecución: 30/4/2024 21:16:52
+Fecha y hora: 30/4/2024 21:16:52
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 21:17:02
+
+
+Inicio de la ejecución: 30/4/2024 21:17:50
+Fecha y hora: 30/4/2024 21:17:50
+
+
+Inicio de la ejecución: 30/4/2024 22:22:38
+Fecha y hora: 30/4/2024 22:22:38
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 22:22:47
+
+
+Inicio de la ejecución: 30/4/2024 22:25:37
+Fecha y hora: 30/4/2024 22:25:37
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 22:25:44
+
+
+Inicio de la ejecución: 30/4/2024 22:27:38
+Fecha y hora: 30/4/2024 22:27:38
+incoming /chat usuario: undefined - Ubicación: 19.2556402,-99.651805, Fecha y hora: 30/4/2024 22:27:48
+incoming /chat usuario: Mi nombre es Alejandra Lolita Serrano Alcántara y mi número telefónico es 7221234567, Fecha y hora: 30/4/2024 22:28:24
+incoming /chat usuario: Me caí por las escaleras y me doble el tobillo, esta inflamado pero solamente eso, Fecha y hora: 30/4/2024 22:28:55
+incoming /chat usuario: Muchas gracias! Eso sería todo, Fecha y hora: 30/4/2024 22:29:17
+incoming /chat usuario: Muchas gracias! Eso sería todo - Ubicación: 19.3855488,-99.1690752, Fecha y hora: 30/4/2024 22:29:23
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 22:29:52
+
+
+Inicio de la ejecución: 30/4/2024 22:31:02
+Fecha y hora: 30/4/2024 22:31:02
+
+incoming /chat usuario: undefined - Ubicación: 19.3855488,-99.1690752, Fecha y hora: 30/4/2024 22:31:12
+incoming /chat usuario: Me llamo Ana Luisa y mi celular es 7229876543, Fecha y hora: 30/4/2024 22:31:36
+incoming /chat usuario: Tuve un accidente automovilistico, no hubo terceros heridos, pero me esta costando respirar, Fecha y hora: 30/4/2024 22:32:02
+incoming /chat usuario: Tuve un accidente automovilistico, no hubo terceros heridos, pero me esta costando respirar - Ubicación: 19.3855488,-99.1690752, Fecha y hora: 30/4/2024 22:32:11
+incoming /chat usuario: Tuve un accidente automovilistico, no hubo terceros heridos, pero me esta costando respirar - Ubicación: 19.3855488,-99.1690752, Fecha y hora: 30/4/2024 22:32:23
+incoming /chat usuario: Tuve un accidente automovilistico, no hubo terceros heridos, pero me esta costando respirar - Ubicación: 19.3855488,-99.1690752, Fecha y hora: 30/4/2024 22:32:25
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 30/4/2024 22:32:35

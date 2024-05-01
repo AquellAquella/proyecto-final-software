@@ -108,13 +108,16 @@ const fs = require('fs');
 // const path = require('path');
 
 // Función para escribir en el archivo de registro
-function writeToLog(data) {
+function writeToLog(data, callback) {
   const logFilePath = path.join(__dirname, 'log.txt');
   fs.appendFile(logFilePath, `${data}\n`, (err) => {
     if (err) {
       console.error('Error al escribir en el archivo de registro:', err);
     } else {
       console.log('\nDatos registrados en el archivo de log.');
+      if (callback) {
+        callback(); // Llamar a la función de retorno si está definida
+      }
     }
   });
 }
@@ -130,29 +133,44 @@ const datosInicioEjecucion = `\n\nInicio de la ejecución: ${fechaHoraInicio}`;
 writeToLog(datosInicioEjecucion);
 
 // Mensaje de confirmación en la consola
-console.log('\nInicio de la ejecución registrada en el archivo de log.');
+console.log('\n\nInicio de la ejecución registrada en el archivo de log.');
 
 // Concatenando fecha y hora local del equipo
 const fechaHora = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
-writeToLog(`Fecha y hora: ${fechaHora}`);
+writeToLog(`Fecha y hora: ${fechaHora}\n`);
+
+let writeToLogCompleted = false; // Bandera para indicar si writeToLog ha sido completada
 
 // Manejar la señal SIGINT (Ctrl + C)
 process.on('SIGINT', () => {
   console.log('\nDeteniendo el servidor...');
-  
+
   // Obtener la fecha y hora actual
   const now = new Date();
   const fechaHoraFin = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
 
   // Mensaje de fin de ejecución
   const mensajeFinEjecucion = `\n--- Fin de registro de datos ---\nFecha y hora de finalización: ${fechaHoraFin}`;
-  
+
   // Registrar el mensaje de fin de ejecución
-  writeToLog(mensajeFinEjecucion);
-  
-  // Salir del proceso
-  process.exit(0);
+  writeToLog(mensajeFinEjecucion, () => {
+    writeToLogCompleted = true; // Marcar que writeToLog ha sido completada
+    checkExit(); // Verificar si es seguro salir del proceso
+  });
+
+  const chatbotInactivo = true;
+
+  // Si writeToLog ha sido completada, salir del proceso
+  function checkExit() {
+    if (writeToLogCompleted && chatbotInactivo) {
+      console.log("El chatbot se encuentra inactivo");
+      process.exit(0);
+    } else {
+      console.log("Esperando que se complete la escritura en el archivo de log o el chatbot se detenga...");
+    }
+  }
 });
+
 
 // Mensaje de confirmación en la consola
 console.log('\nInicio de la ejecución registrada en el archivo de log.');
