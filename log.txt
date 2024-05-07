@@ -393,3 +393,113 @@ Fecha y hora: 2/5/2024 13:32:08
 
 --- Fin de registro de datos ---
 Fecha y hora de finalización: 2/5/2024 13:32:13
+
+
+Inicio de la ejecución: 2/5/2024 19:16:58
+Fecha y hora: 2/5/2024 19:16:58
+
+incoming /chat usuario: undefined - Ubicación: 19.2550373,-99.623011, Fecha y hora: 2/5/2024 19:26:15
+incoming /chat usuario: askdnaskjdnakjsnn,vj,, Fecha y hora: 2/5/2024 19:26:31
+incoming /chat usuario: nbvmbvm, Fecha y hora: 2/5/2024 19:26:38
+incoming /chat usuario: ¿'0987ytre, Fecha y hora: 2/5/2024 19:26:43
+incoming /chat usuario: Me llamo July y mi celular es 72221234567, Fecha y hora: 2/5/2024 19:26:57
+incoming /chat usuario: El usuario está inactivo., Fecha y hora: 2/5/2024 19:31:57
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 2/5/2024 19:40:20
+
+
+Inicio de la ejecución: 2/5/2024 19:40:41
+Fecha y hora: 2/5/2024 19:40:41
+
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 2/5/2024 19:42:41
+Fecha y hora: 2/5/2024 19:43:41
+
+
+
+Inicio de la ejecución: 2/5/2024 19:43:41
+incoming /chat usuario: undefined - Ubicación: 19.2550373,-99.623011, Fecha y hora: 2/5/2024 19:44:03
+incoming /chat usuario: undefined - Ubicación: 19.2550373,-99.623011, Fecha y hora: 2/5/2024 19:44:27
+incoming /chat usuario: undefined - Ubicación: 19.2550373,-99.623011, Fecha y hora: 2/5/2024 19:45:49
+incoming /chat usuario: undefined - Ubicación: 19.2550373,-99.623011, Fecha y hora: 2/5/2024 19:45:54
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 2/5/2024 19:54:21
+
+
+Inicio de la ejecución: 2/5/2024 19:56:25
+Fecha y hora: 2/5/2024 19:56:25
+
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 2/5/2024 19:59:03
+
+
+Inicio de la ejecución: 2/5/2024 20:00:44
+Fecha y hora: 2/5/2024 20:00:44
+
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 2/5/2024 20:01:00
+
+
+Inicio de la ejecución: 2/5/2024 20:01:03
+Fecha y hora: 2/5/2024 20:01:03
+
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 2/5/2024 20:01:17
+
+
+Inicio de la ejecución: 2/5/2024 20:01:18
+Fecha y hora: 2/5/2024 20:01:18
+
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 2/5/2024 20:01:24
+
+
+Inicio de la ejecución: 2/5/2024 20:01:26
+Fecha y hora: 2/5/2024 20:01:26
+
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 2/5/2024 20:01:29
+
+
+Inicio de la ejecución: 2/5/2024 20:01:30
+Fecha y hora: 2/5/2024 20:01:30
+
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 2/5/2024 20:01:38
+
+
+Inicio de la ejecución: 2/5/2024 20:01:42
+Fecha y hora: 2/5/2024 20:01:42
+
+incoming /chat usuario: undefined - Ubicación: 19.2550373,-99.623011, Fecha y hora: 2/5/2024 20:09:49
+
+
+Inicio de la ejecución: 6/5/2024 19:14:07
+Fecha y hora: 6/5/2024 19:14:07
+
+incoming /chat usuario: Estamos bien, Fecha y hora: 6/5/2024 19:32:37
+incoming /chat usuario: Ayuda, Fecha y hora: 6/5/2024 20:11:55
+incoming /chat usuario: El usuario está inactivo., Fecha y hora: 6/5/2024 20:16:54
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 6/5/2024 20:26:52
+
+
+Inicio de la ejecución: 6/5/2024 20:38:07
+Fecha y hora: 6/5/2024 20:38:07
+
+incoming /chat usuario: Ayuda, Fecha y hora: 6/5/2024 20:39:12
+incoming /chat usuario: Ayudame, Fecha y hora: 6/5/2024 20:39:38
+incoming /chat usuario: Mi nombre es Kenia y mi numero es 7221234567, Fecha y hora: 6/5/2024 20:40:27
+incoming /chat usuario: 😋, Fecha y hora: 6/5/2024 20:41:00
+incoming /chat usuario: El usuario está inactivo., Fecha y hora: 6/5/2024 20:44:12
+incoming /chat usuario: El usuario está inactivo., Fecha y hora: 6/5/2024 20:45:59

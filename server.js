@@ -2,6 +2,9 @@
 // node --version # Should be >= 18
 // npm install @google/generative-ai express
 
+// Inicio de prueba de rendimiento mediante consola 
+console.time('rendimiento');
+
 // constante de obtención de elementos desde la carpeta y funcionalidad express de node_modules junto con obtención de variables delimitadas dentro del archivo de .env del uso del modelo de Node.js y los módulos descargados para generar ai desde un modelo
 const express = require('express');
 const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } = require('@google/generative-ai');
@@ -179,3 +182,6 @@ console.log('\nInicio de la ejecución registrada en el archivo de log.');
 app.listen(port, () => {
   console.log(`Server escuchando en el puerto ${port}`);
 });
+
+// Final de prueba de rendimiento mediante consola 
+console.timeEnd('rendimiento');
