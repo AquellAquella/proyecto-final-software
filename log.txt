@@ -503,3 +503,53 @@ incoming /chat usuario: Mi nombre es Kenia y mi numero es 7221234567, Fecha y ho
 incoming /chat usuario: 😋, Fecha y hora: 6/5/2024 20:41:00
 incoming /chat usuario: El usuario está inactivo., Fecha y hora: 6/5/2024 20:44:12
 incoming /chat usuario: El usuario está inactivo., Fecha y hora: 6/5/2024 20:45:59
+
+
+Inicio de la ejecución: 9/5/2024 19:18:33
+Fecha y hora: 9/5/2024 19:18:33
+
+incoming /chat usuario: undefined - Ubicación: 19.2534467,-99.6266996, Fecha y hora: 9/5/2024 19:19:05
+incoming /chat usuario: Estoy en Campus Toluca en Metepec, Estado de Mexico, Fecha y hora: 9/5/2024 19:28:59
+incoming /chat usuario: Soy Kenia you might Nero es 7221234567, Fecha y hora: 9/5/2024 19:29:41
+incoming /chat usuario: Estoy en Estado de México Toluca, en Campus Toluca TecMilenio, Fecha y hora: 9/5/2024 19:31:03
+incoming /chat usuario: Mi nombre es Kenia y mi número es 7221234567, Fecha y hora: 9/5/2024 19:31:28
+incoming /chat usuario: Mi ubicación es Toluca, Estado de Mexico, Fecha y hora: 9/5/2024 19:32:05
+incoming /chat usuario: Ayuda, Fecha y hora: 9/5/2024 19:32:24
+incoming /chat usuario: Mi nombre es Kenia, mi número es 7221234567 y me encuentro en Campus Toluca TecMilenio, Toluca, Estado de Mexico, Fecha y hora: 9/5/2024 19:33:05
+incoming /chat usuario: 😙😉😋, Fecha y hora: 9/5/2024 19:33:31
+incoming /chat usuario: Mi nombre es Kenia y mi número es 7221234567, Fecha y hora: 9/5/2024 19:34:07
+incoming /chat usuario: Me esguince, Fecha y hora: 9/5/2024 19:34:19
+incoming /chat usuario: Me esguince, Fecha y hora: 9/5/2024 19:34:53
+incoming /chat usuario: Fue en mi nueva, me va y me duele mucho, Fecha y hora: 9/5/2024 19:35:22
+incoming /chat usuario: Mi nombre es Kenia y mi número es 7221234567 y estoy en Toluca, Estado de Mexico, Fecha y hora: 9/5/2024 19:36:21
+incoming /chat usuario: 😙, Fecha y hora: 9/5/2024 19:36:39
+
+--- Fin de registro de datos ---
+Fecha y hora de finalización: 9/5/2024 19:38:58
+
+
+Inicio de la ejecución: 9/5/2024 20:15:54
+Fecha y hora: 9/5/2024 20:15:54
+
+incoming /chat usuario: undefined - Ubicación: 19.2550373,-99.623011, Fecha y hora: 9/5/2024 20:17:01
+incoming /chat usuario: Mi nombre es Claudia y mi numero es 72912345678, Fecha y hora: 9/5/2024 20:17:35
+incoming /chat usuario: Mi nombre es Raúl, mi número es 7299087654 y estoy en Campus Toluca TecMilenio en Estado de México , Toluca, Fecha y hora: 9/5/2024 20:18:47
+incoming /chat usuario: Tuve un desgarre en el abdomen, Fecha y hora: 9/5/2024 20:20:22
+incoming /chat usuario: Me fracture la nariz, Fecha y hora: 9/5/2024 20:20:22
+incoming /chat usuario: Necesito consejo para que hacer, Fecha y hora: 9/5/2024 20:21:27
+incoming /chat usuario: Necesito consejos, Fecha y hora: 9/5/2024 20:21:28
+incoming /chat usuario: El usuario está inactivo., Fecha y hora: 9/5/2024 20:59:55
+
+
+Inicio de la ejecución: 14/5/2024 08:00:37
+Fecha y hora: 14/5/2024 08:00:37
+
+incoming /chat usuario: undefined - Ubicación: 19.3258466,-99.0750788, Fecha y hora: 14/5/2024 08:11:57
+incoming /chat usuario: Ayuda, Fecha y hora: 14/5/2024 08:12:37
+incoming /chat usuario: Mi nombre es Ana María y mi numero es 7224567891, Fecha y hora: 14/5/2024 08:13:19
+incoming /chat usuario: Estaba acomodando unos estantes dentro de la cocina y me resbalé al bajar la escalera, me torcí el tobillo y me duele mucho, Fecha y hora: 14/5/2024 08:14:47
+incoming /chat usuario: Mi nombre es Ana María y mi número es 7224567891, Fecha y hora: 14/5/2024 08:15:18
+incoming /chat usuario: La tuve dura de tobillo que te mencioné anteriormente, Fecha y hora: 14/5/2024 08:15:32
+incoming /chat usuario: Auxilio, Fecha y hora: 14/5/2024 08:23:58
+incoming /chat usuario: Mi nombre es Kenia y mi número telefónico es 7291234567, Fecha y hora: 14/5/2024 08:24:24
+incoming /chat usuario: Por accidente agarre el borde de la olla con las manos cuando estaba cocinando, se me esta ampollando la piel por la quemadura. ¿Que hago?, Fecha y hora: 14/5/2024 08:25:04
